@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kozmo AI &amp; Intake Agent — Case Study · Ankit Singh</title>
+<meta name="description" content="AI-Powered Contract & Procurement Automation — case study by Ankit Singh, Senior Business Analyst." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="/assets/case-studies-DIl3BevY.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/case-studies-DHaHFmOX.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<nav class="top" id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html#work" class="back-link">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 11L5 7l4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to portfolio
+    </a>
+    <div class="case-tabs">
+      <a href="case-study-kozmo-portal.html"><span class="num">01</span> Kozmo Portal</a>
+      <a href="case-study-kozmo-ai-intake.html" class="active"><span class="num">02</span> Intake Agent</a>
+      <a href="case-study-econtracts.html"><span class="num">03</span> eContracts</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">
+      Contact
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO (gold-accented) -->
+<section class="case-hero" style="background: linear-gradient(180deg, #faf6e8 0%, #f5f5f3 60%);">
+  <div class="wrap">
+    <div class="reveal"><span class="hero-no"><span class="bar"></span>Case Study&nbsp;·&nbsp;02 of 03</span></div>
+    <div class="reveal" data-delay="1">
+      <span class="hero-category"><span class="dot" style="background:#d4a017"></span>AI-Powered · Contract &amp; Procurement Automation</span>
+    </div>
+    <h1 class="reveal" data-delay="2">Kozmo AI &amp;<br><em>Intake Agent</em>.</h1>
+    <p class="hero-tagline reveal" data-delay="3">
+      Automating vendor intake and procurement workflows using AI-driven operational intelligence.
+    </p>
+
+    <div class="hero-meta reveal" data-delay="4">
+      <div class="hero-meta-card">
+        <div class="lab">Role</div>
+        <div class="val">Lead <em>BA</em></div>
+      </div>
+      <div class="hero-meta-card">
+        <div class="lab">Business Rules</div>
+        <div class="val"><em>30+</em> mapped</div>
+      </div>
+      <div class="hero-meta-card">
+        <div class="lab">Stages Eliminated</div>
+        <div class="val">redundant ones</div>
+      </div>
+      <div class="hero-meta-card">
+        <div class="lab">Outcome</div>
+        <div class="val"><em>40%</em> manual ↓</div>
+      </div>
+    </div>
+
+    <div class="hero-art reveal" data-delay="5">
+      <svg viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" style="width:100%; height:100%" aria-hidden="true">
+        <defs>
+          <linearGradient id="aiBg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff8de"/>
+            <stop offset="1" stop-color="#f1dccf"/>
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="520" fill="url(#aiBg)"/>
+
+        <!-- Form rows feeding into AI -->
+        <g>
+          <rect x="80" y="120" width="280" height="22" rx="6" fill="#fff" stroke="#1f1f1f" stroke-width="1"/>
+          <rect x="80" y="156" width="220" height="22" rx="6" fill="#fff" stroke="#1f1f1f" stroke-width="1"/>
+          <rect x="80" y="192" width="320" height="22" rx="6" fill="#fff" stroke="#1f1f1f" stroke-width="1"/>
+          <rect x="80" y="228" width="180" height="22" rx="6" fill="#fff" stroke="#1f1f1f" stroke-width="1"/>
+          <rect x="80" y="264" width="260" height="22" rx="6" fill="#fff" stroke="#1f1f1f" stroke-width="1"/>
+          <rect x="80" y="300" width="200" height="22" rx="6" fill="#fff" stroke="#1f1f1f" stroke-width="1"/>
+          <rect x="80" y="336" width="280" height="22" rx="6" fill="#fff" stroke="#1f1f1f" stroke-width="1"/>
+
+          <!-- highlight rows -->
+          <rect x="80" y="156" width="220" height="22" rx="6" fill="#d4a017" opacity=".22"/>
+          <rect x="80" y="264" width="260" height="22" rx="6" fill="#b76e4d" opacity=".22"/>
+        </g>
+
+        <!-- arrows feeding AI -->
+        <g stroke="#1f1f1f" stroke-width="1.4" fill="none" opacity=".55">
+          <path d="M 410 130 Q 520 220 580 250"/>
+          <path d="M 410 165 Q 520 220 580 255"/>
+          <path d="M 410 200 Q 520 230 580 260"/>
+          <path d="M 410 240 Q 520 250 580 265"/>
+          <path d="M 410 275 Q 520 270 580 270"/>
+          <path d="M 410 310 Q 520 290 580 275"/>
+          <path d="M 410 345 Q 520 310 580 280"/>
+        </g>
+
+        <!-- AI core -->
+        <g>
+          <circle cx="700" cy="260" r="80" fill="#1f1f1f"/>
+          <circle cx="700" cy="260" r="80" fill="none" stroke="#d4a017" stroke-width="1" stroke-dasharray="3 4"/>
+          <text x="700" y="248" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#d4a017" letter-spacing="3">AGENT</text>
+          <text x="700" y="282" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="36" fill="#fff">AI</text>
+        </g>
+
+        <!-- output -->
+        <g stroke="#1f1f1f" stroke-width="1.4" fill="none" opacity=".55">
+          <path d="M 780 230 Q 880 200 950 200"/>
+          <path d="M 780 260 Q 880 260 950 260"/>
+          <path d="M 780 290 Q 880 320 950 320"/>
+        </g>
+
+        <g>
+          <rect x="950" y="180" width="180" height="42" rx="10" fill="#fff" stroke="#1f1f1f" stroke-width="1"/>
+          <circle cx="975" cy="201" r="9" fill="#d4a017"/>
+          <path d="M 970 201 l 4 4 l 8 -8" stroke="#1f1f1f" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="995" y="206" font-family="Inter, sans-serif" font-size="13" fill="#1f1f1f">Auto-classified</text>
+
+          <rect x="950" y="240" width="180" height="42" rx="10" fill="#fff" stroke="#1f1f1f" stroke-width="1"/>
+          <circle cx="975" cy="261" r="9" fill="#b76e4d"/>
+          <text x="975" y="266" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#fff" font-weight="600">!</text>
+          <text x="995" y="266" font-family="Inter, sans-serif" font-size="13" fill="#1f1f1f">Routed for review</text>
+
+          <rect x="950" y="300" width="180" height="42" rx="10" fill="#1f1f1f"/>
+          <text x="1040" y="326" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#fff">Approved →</text>
+        </g>
+
+        <!-- Decorative -->
+        <text x="80" y="80" font-family="JetBrains Mono, monospace" font-size="11" fill="#5f6368" letter-spacing="3">VENDOR INTAKE · INPUT</text>
+        <text x="950" y="170" font-family="JetBrains Mono, monospace" font-size="11" fill="#5f6368" letter-spacing="3">DECISION · OUTPUT</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal"><span class="eyebrow gold">02 · Project Overview</span></div>
+      <div class="reveal" data-delay="1">
+        <p class="lead-p">
+          An AI-powered <em>procurement and contract intake</em> platform — built to simplify vendor onboarding, workflow approvals, and operational validation at enterprise scale.
+        </p>
+        <p class="body-p" style="margin-top: 32px;">
+          Procurement teams were drowning in repetitive intake. Vendors filled out long forms, finance re-keyed the data into a separate system, legal hunted for clauses, and approvals bounced through email chains. The Intake Agent's job was to absorb that chaos and resolve it into a single, auditable flow.
+        </p>
+        <p class="body-p">
+          As lead Business Analyst, I owned the discovery, the rule-set, and the fit/gap analysis between three legacy systems and the new agent — the work that decided what the AI would automate and what humans would still touch.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section" style="background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow brown">03 · Business Problem</span>
+      <h2>Intake was the <em>bottleneck</em>.</h2>
+      <p>The procurement org wasn't slow because of approvals — it was slow because every request started life as a partially-filled form.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-item reveal"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Manual vendor onboarding with hand-keyed data across multiple systems.</p></div>
+      <div class="problem-item reveal" data-delay="1"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Repetitive data entry by both vendors and internal procurement teams.</p></div>
+      <div class="problem-item reveal" data-delay="2"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Approval bottlenecks — requests stalling for days at a single reviewer.</p></div>
+      <div class="problem-item reveal" data-delay="3"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Inconsistent intake workflows varying by region and category.</p></div>
+      <div class="problem-item reveal" data-delay="2"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Poor intake visibility — no shared status across procurement, legal &amp; finance.</p></div>
+      <div class="problem-item reveal" data-delay="3"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Operational inefficiencies compounded by handoff delays.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROLE -->
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal"><span class="eyebrow">04 · My Role</span></div>
+      <div class="reveal" data-delay="1">
+        <div class="role-card">
+          <div class="role-title">Lead Business Analyst</div>
+          <div class="role-sub">Rules · Fit / Gap · Data Mapping · UAT</div>
+          <ul>
+            <li>Business rule gathering &amp; documentation</li>
+            <li>Fit / Gap analysis across legacy systems</li>
+            <li>Workflow requirement definition</li>
+            <li>Cross-system data mapping</li>
+            <li>Stakeholder collaboration &amp; alignment</li>
+            <li>UAT scoping, scenarios &amp; sign-off</li>
+            <li>AI decision-rule design with engineering</li>
+            <li>Acceptance criteria &amp; edge-case definition</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY CONTRIBUTIONS -->
+<section class="section" style="border-top: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow gold">05 · Key Contributions</span>
+      <h2>Where the <em>intelligence</em> came from.</h2>
+      <p>The agent only worked because the rules underneath it were explicit. Most of that work happened in spreadsheets, workshops and patient mapping.</p>
+    </div>
+    <div class="contrib-grid">
+      <div class="contrib reveal"><div class="n">i.</div><h4>30+ business rules documented</h4><p>Captured every conditional in plain language with worked examples — the foundation the AI engine was trained against.</p></div>
+      <div class="contrib reveal" data-delay="1"><div class="n">ii.</div><h4>Workflow inefficiencies identified</h4><p>Mapped current-state flows; surfaced 9 redundant approval stages and 4 duplicate validations across systems.</p></div>
+      <div class="contrib reveal" data-delay="2"><div class="n">iii.</div><h4>Redundant stages eliminated</h4><p>Collapsed sequential reviews into parallel ones where rules permitted. Average intake length dropped meaningfully.</p></div>
+      <div class="contrib reveal"><div class="n">iv.</div><h4>AI-assisted intake workflows</h4><p>Designed the agent's decision boundary — what it auto-decides, what it routes, and what it always escalates.</p></div>
+      <div class="contrib reveal" data-delay="1"><div class="n">v.</div><h4>Cross-system data mapping</h4><p>Reconciled vendor data models across 3 legacy systems into a single canonical schema for the agent.</p></div>
+      <div class="contrib reveal" data-delay="2"><div class="n">vi.</div><h4>UAT scenario library</h4><p>Built an exhaustive scenario library covering happy path, edge cases, and rule conflicts — used for every release.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="section" style="background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow gold">06 · Solution Delivered</span>
+      <h2>An agent that <em>decides</em>, not just routes.</h2>
+    </div>
+    <div class="solution-list reveal">
+      <div class="solution-row"><span class="num">i — 01</span><span class="label">AI-driven intake processing</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      <div class="solution-row"><span class="num">ii — 02</span><span class="label">Automated approval workflows</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      <div class="solution-row"><span class="num">iii — 03</span><span class="label">Vendor onboarding standardization</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      <div class="solution-row"><span class="num">iv — 04</span><span class="label">Centralized intake tracking</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      <div class="solution-row"><span class="num">v — 05</span><span class="label">Workflow validation logic</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">07 · Business Impact</span>
+      <h2>From <em>days</em> to minutes.</h2>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi gold reveal"><div class="kpi-num" data-count="40" data-suffix="%"><em>0</em></div><div class="kpi-lab">Manual intervention reduced</div></div>
+      <div class="kpi reveal" data-delay="1"><div class="kpi-num" data-count="30" data-suffix="+"><em>0</em></div><div class="kpi-lab">Business rules formalized</div></div>
+      <div class="kpi dark reveal" data-delay="2"><div class="kpi-num" data-count="3" data-suffix="x"><em>0</em></div><div class="kpi-lab">Intake processing speed</div></div>
+      <div class="kpi brown reveal" data-delay="3"><div class="kpi-num" data-count="9" data-suffix=""><em>0</em></div><div class="kpi-lab">Redundant stages removed</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKFLOW -->
+<section class="section" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">08 · AI Workflow Visualization</span>
+      <h2>The <em>agent's</em> decision loop.</h2>
+    </div>
+    <div class="wf-frame dark reveal">
+      <svg viewBox="0 0 1100 380" preserveAspectRatio="xMidYMid meet" style="width:100%; height:auto" aria-hidden="true">
+        <defs>
+          <marker id="aiArr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#d4a017"/>
+          </marker>
+        </defs>
+
+        <!-- Stage 1: Submission -->
+        <g>
+          <rect x="40" y="140" width="160" height="120" rx="14" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.18)"/>
+          <text x="120" y="125" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(255,255,255,.6)" letter-spacing="2">01 SUBMIT</text>
+          <text x="120" y="190" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="22" fill="#fff">Vendor</text>
+          <text x="120" y="220" text-anchor="middle" font-size="13" fill="rgba(255,255,255,.65)">request &amp; data</text>
+        </g>
+
+        <!-- Stage 2: Classify -->
+        <g>
+          <rect x="240" y="140" width="160" height="120" rx="14" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.18)"/>
+          <text x="320" y="125" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(255,255,255,.6)" letter-spacing="2">02 CLASSIFY</text>
+          <text x="320" y="190" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="22" fill="#fff">AI Tag</text>
+          <text x="320" y="220" text-anchor="middle" font-size="13" fill="rgba(255,255,255,.65)">type · tier · risk</text>
+        </g>
+
+        <!-- AI core (decision) -->
+        <g>
+          <circle cx="500" cy="200" r="60" fill="#d4a017"/>
+          <text x="500" y="194" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#1f1f1f" letter-spacing="3">DECIDE</text>
+          <text x="500" y="220" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="26" fill="#1f1f1f">AI</text>
+        </g>
+
+        <!-- Branch A: auto-approve -->
+        <g>
+          <rect x="610" y="80" width="200" height="80" rx="12" fill="rgba(212,160,23,.18)" stroke="#d4a017"/>
+          <text x="710" y="115" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#d4a017" letter-spacing="2">AUTO-APPROVE</text>
+          <text x="710" y="140" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="20" fill="#fff">Low-risk path</text>
+        </g>
+
+        <!-- Branch B: human review -->
+        <g>
+          <rect x="610" y="170" width="200" height="80" rx="12" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.25)"/>
+          <text x="710" y="205" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(255,255,255,.7)" letter-spacing="2">HUMAN REVIEW</text>
+          <text x="710" y="230" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="20" fill="#fff">Edge cases</text>
+        </g>
+
+        <!-- Branch C: escalate -->
+        <g>
+          <rect x="610" y="260" width="200" height="80" rx="12" fill="rgba(183,110,77,.25)" stroke="#b76e4d"/>
+          <text x="710" y="295" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#f1dccf" letter-spacing="2">ESCALATE</text>
+          <text x="710" y="320" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="20" fill="#fff">Risk path</text>
+        </g>
+
+        <!-- output -->
+        <g>
+          <rect x="860" y="170" width="200" height="80" rx="12" fill="#fff"/>
+          <text x="960" y="205" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5f6368" letter-spacing="2">EXECUTED</text>
+          <text x="960" y="230" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="20" fill="#1f1f1f">Vendor live</text>
+        </g>
+
+        <!-- arrows -->
+        <g stroke="#d4a017" stroke-width="1.4" fill="none">
+          <line x1="200" y1="200" x2="235" y2="200" marker-end="url(#aiArr)"/>
+          <line x1="400" y1="200" x2="435" y2="200" marker-end="url(#aiArr)"/>
+          <line x1="560" y1="170" x2="605" y2="120" marker-end="url(#aiArr)"/>
+          <line x1="560" y1="200" x2="605" y2="200" marker-end="url(#aiArr)"/>
+          <line x1="560" y1="230" x2="605" y2="290" marker-end="url(#aiArr)"/>
+          <path d="M 810 120 Q 870 120 870 190" marker-end="url(#aiArr)"/>
+          <line x1="810" y1="210" x2="855" y2="210" marker-end="url(#aiArr)"/>
+          <path d="M 810 290 Q 870 290 870 230" marker-end="url(#aiArr)"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS & SKILLS -->
+<section class="section" style="background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="reveal" style="margin-bottom: 32px;">
+          <span class="eyebrow">09 · Tools &amp; Tech</span>
+          <h2 style="margin-top:14px; font-size: 28px; font-weight:400;">The <em>stack</em>.</h2>
+        </div>
+        <div class="chip-grid reveal" data-delay="1">
+          <span class="chip"><span class="dot"></span>Azure DevOps</span>
+          <span class="chip"><span class="dot"></span>SQL</span>
+          <span class="chip"><span class="dot"></span>Agile Scrum</span>
+          <span class="chip"><span class="dot"></span>Workflow Automation</span>
+          <span class="chip"><span class="dot"></span>Data Mapping</span>
+        </div>
+      </div>
+      <div>
+        <div class="reveal" style="margin-bottom: 32px;">
+          <span class="eyebrow gold">10 · Skills Demonstrated</span>
+          <h2 style="margin-top:14px; font-size: 28px; font-weight:400;">The <em>practice</em>.</h2>
+        </div>
+        <div class="chip-grid reveal" data-delay="1">
+          <span class="chip gold-dot"><span class="dot"></span>Business Rule Engineering</span>
+          <span class="chip gold-dot"><span class="dot"></span>Fit / Gap Analysis</span>
+          <span class="chip gold-dot"><span class="dot"></span>Data Mapping</span>
+          <span class="chip gold-dot"><span class="dot"></span>AI Workflow Design</span>
+          <span class="chip gold-dot"><span class="dot"></span>UAT Coordination</span>
+          <span class="chip gold-dot"><span class="dot"></span>Process Reengineering</span>
+          <span class="chip gold-dot"><span class="dot"></span>Stakeholder Mgmt</span>
+          <span class="chip gold-dot"><span class="dot"></span>Workshop Facilitation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGES -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow brown">11 · Challenges &amp; Resolutions</span>
+      <h2>Teaching the agent to <em>doubt itself</em>.</h2>
+    </div>
+
+    <div class="challenge-pair reveal">
+      <div class="challenge">
+        <span class="step problem">Challenge 01</span>
+        <h4>Rules conflicted between regions.</h4>
+        <p>What APAC procurement treated as standard, EMEA escalated for legal review — the agent kept making locally-correct, globally-wrong calls.</p>
+      </div>
+      <div class="challenge">
+        <span class="step fix">Resolution</span>
+        <h4>Region as a first-class rule dimension.</h4>
+        <p>Re-modeled rules with region scoped at the policy level. Conflict rate dropped sharply within a single sprint.</p>
+      </div>
+    </div>
+
+    <div class="challenge-pair reveal" data-delay="1">
+      <div class="challenge">
+        <span class="step problem">Challenge 02</span>
+        <h4>Stakeholders distrusted "the AI" by default.</h4>
+        <p>Reviewers were over-correcting confident AI decisions because the agent felt opaque.</p>
+      </div>
+      <div class="challenge">
+        <span class="step fix">Resolution</span>
+        <h4>Surfaced reasoning in plain language.</h4>
+        <p>Every decision shipped with a "why" snippet referencing the underlying rule. Override rate normalized.</p>
+      </div>
+    </div>
+
+    <div class="challenge-pair reveal" data-delay="2">
+      <div class="challenge">
+        <span class="step problem">Challenge 03</span>
+        <h4>Legacy data was inconsistent across systems.</h4>
+        <p>Same vendor, three identities. Data mapping kept breaking on edge cases nobody owned.</p>
+      </div>
+      <div class="challenge">
+        <span class="step fix">Resolution</span>
+        <h4>Defined a canonical schema + reconciliation rules.</h4>
+        <p>Every legacy field mapped to one canonical attribute, with explicit owner and tie-breaker logic.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOME -->
+<section class="section">
+  <div class="wrap">
+    <div class="outcome reveal">
+      <span class="eyebrow">12 · Final Outcome</span>
+      <h2>
+        The Intake Agent moved procurement from a <em>queue</em> into a flow — vendors onboarded faster, reviewers focused on edge cases, and leadership finally had visibility.
+      </h2>
+      <p>
+        Beyond the 40% manual reduction, the deeper outcome was operational: an AI you could audit. Every decision was explainable, every rule was versioned, and every escalation was deliberate. That made it safe for the business to lean on.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="case-nav">
+  <a href="case-study-kozmo-portal.html" class="case-nav-item prev">
+    <span class="lab"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M7 3L3 7l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Previous · 01</span>
+    <span class="ttl">Kozmo <em>Portal</em></span>
+    <span class="arr"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M7 3L3 7l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</span>
+  </a>
+  <a href="case-study-econtracts.html" class="case-nav-item next">
+    <span class="lab">Next case study&nbsp;·&nbsp;03</span>
+    <span class="ttl">eContracts &amp; <em>Import Tool</em></span>
+    <span class="arr">Continue<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+</div>
+
+<footer class="foot">
+  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+    <span>© 2026 Ankit Singh · Bengaluru, India</span>
+    <span>Case Study 02 of 03</span>
+  </div>
+</footer>
+
+</main>
+
+<button id="to-top" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m18 15-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+</body>
+</html>

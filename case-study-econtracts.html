@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>eContracts &amp; Import Tool — Case Study · Ankit Singh</title>
+<meta name="description" content="Enterprise Contract Lifecycle Management Platform — case study by Ankit Singh, Senior Business Analyst." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="case-studies.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<nav class="top" id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html#work" class="back-link">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 11L5 7l4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to portfolio
+    </a>
+    <div class="case-tabs">
+      <a href="case-study-kozmo-portal.html"><span class="num">01</span> Kozmo Portal</a>
+      <a href="case-study-kozmo-ai-intake.html"><span class="num">02</span> Intake Agent</a>
+      <a href="case-study-econtracts.html" class="active"><span class="num">03</span> eContracts</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">
+      Contact
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</nav>
+
+<main>
+
+<!-- DARK HERO -->
+<section class="case-hero dark">
+  <div class="wrap">
+    <div class="reveal"><span class="hero-no"><span class="bar"></span>Case Study&nbsp;·&nbsp;03 of 03</span></div>
+    <div class="reveal" data-delay="1">
+      <span class="hero-category"><span class="dot" style="background:#d4a017"></span>Enterprise · Contract Lifecycle Management</span>
+    </div>
+    <h1 class="reveal" data-delay="2">eContracts &amp;<br><em>Import Tool</em>.</h1>
+    <p class="hero-tagline reveal" data-delay="3">
+      Centralizing enterprise contract operations through workflow automation and intelligent reporting.
+    </p>
+
+    <div class="hero-meta reveal" data-delay="4">
+      <div class="hero-meta-card">
+        <div class="lab">Role</div>
+        <div class="val">Lead <em>BA</em></div>
+      </div>
+      <div class="hero-meta-card">
+        <div class="lab">Monthly Volume</div>
+        <div class="val"><em>500+</em> contracts</div>
+      </div>
+      <div class="hero-meta-card">
+        <div class="lab">Reporting Saved</div>
+        <div class="val"><em>3+</em> hrs/wk</div>
+      </div>
+      <div class="hero-meta-card">
+        <div class="lab">Outcome</div>
+        <div class="val"><em>60%</em> manual ↓</div>
+      </div>
+    </div>
+
+    <!-- Hero art: dashboard mock -->
+    <div class="hero-art reveal" data-delay="5">
+      <svg viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" style="width:100%; height:100%" aria-hidden="true">
+        <rect width="1200" height="520" fill="#1f1f1f"/>
+        <!-- Window chrome -->
+        <rect x="40" y="40" width="1120" height="440" rx="14" fill="#252525" stroke="rgba(255,255,255,.08)"/>
+        <circle cx="68" cy="68" r="6" fill="rgba(255,255,255,.2)"/>
+        <circle cx="86" cy="68" r="6" fill="rgba(255,255,255,.2)"/>
+        <circle cx="104" cy="68" r="6" fill="rgba(255,255,255,.2)"/>
+        <text x="600" y="73" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(255,255,255,.4)" text-anchor="middle" letter-spacing="2">CONTRACTS · DASHBOARD</text>
+
+        <!-- KPI cards -->
+        <g>
+          <rect x="64" y="100" width="220" height="90" rx="10" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)"/>
+          <text x="80" y="125" font-family="JetBrains Mono, monospace" font-size="10" fill="rgba(255,255,255,.5)" letter-spacing="2">ACTIVE</text>
+          <text x="80" y="170" font-family="Fraunces, serif" font-style="italic" font-size="36" fill="#fff">1,247</text>
+
+          <rect x="304" y="100" width="220" height="90" rx="10" fill="rgba(212,160,23,.18)" stroke="#d4a017"/>
+          <text x="320" y="125" font-family="JetBrains Mono, monospace" font-size="10" fill="#d4a017" letter-spacing="2">PENDING SIGN</text>
+          <text x="320" y="170" font-family="Fraunces, serif" font-style="italic" font-size="36" fill="#fff">82</text>
+
+          <rect x="544" y="100" width="220" height="90" rx="10" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)"/>
+          <text x="560" y="125" font-family="JetBrains Mono, monospace" font-size="10" fill="rgba(255,255,255,.5)" letter-spacing="2">EXPIRING · 30D</text>
+          <text x="560" y="170" font-family="Fraunces, serif" font-style="italic" font-size="36" fill="#fff">36</text>
+
+          <rect x="784" y="100" width="220" height="90" rx="10" fill="rgba(183,110,77,.22)" stroke="#b76e4d"/>
+          <text x="800" y="125" font-family="JetBrains Mono, monospace" font-size="10" fill="#f1dccf" letter-spacing="2">AT RISK</text>
+          <text x="800" y="170" font-family="Fraunces, serif" font-style="italic" font-size="36" fill="#fff">14</text>
+        </g>
+
+        <!-- Bar chart -->
+        <g>
+          <rect x="64" y="220" width="500" height="220" rx="10" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)"/>
+          <text x="80" y="250" font-family="JetBrains Mono, monospace" font-size="10" fill="rgba(255,255,255,.5)" letter-spacing="2">VOLUME · TRAILING 12M</text>
+          <line x1="80" y1="410" x2="540" y2="410" stroke="rgba(255,255,255,.15)"/>
+          <g>
+            <rect x="100" y="370" width="22" height="40" fill="#d4a017" opacity=".6"/>
+            <rect x="140" y="350" width="22" height="60" fill="#d4a017" opacity=".7"/>
+            <rect x="180" y="330" width="22" height="80" fill="#d4a017"/>
+            <rect x="220" y="320" width="22" height="90" fill="#d4a017"/>
+            <rect x="260" y="290" width="22" height="120" fill="#fff"/>
+            <rect x="300" y="270" width="22" height="140" fill="#fff"/>
+            <rect x="340" y="280" width="22" height="130" fill="#fff"/>
+            <rect x="380" y="260" width="22" height="150" fill="#b76e4d"/>
+            <rect x="420" y="240" width="22" height="170" fill="#b76e4d"/>
+            <rect x="460" y="250" width="22" height="160" fill="#b76e4d"/>
+            <rect x="500" y="220" width="22" height="190" fill="#b76e4d"/>
+          </g>
+        </g>
+
+        <!-- Donut + signature -->
+        <g>
+          <rect x="584" y="220" width="220" height="220" rx="10" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)"/>
+          <text x="600" y="250" font-family="JetBrains Mono, monospace" font-size="10" fill="rgba(255,255,255,.5)" letter-spacing="2">MIX</text>
+          <circle cx="694" cy="340" r="60" fill="none" stroke="#fff" stroke-width="14" opacity=".25"/>
+          <circle cx="694" cy="340" r="60" fill="none" stroke="#d4a017" stroke-width="14" stroke-dasharray="180 377" stroke-dashoffset="0" transform="rotate(-90 694 340)"/>
+          <circle cx="694" cy="340" r="60" fill="none" stroke="#b76e4d" stroke-width="14" stroke-dasharray="80 377" stroke-dashoffset="-180" transform="rotate(-90 694 340)"/>
+          <text x="694" y="340" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="28" fill="#fff">68%</text>
+          <text x="694" y="358" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="rgba(255,255,255,.5)" letter-spacing="2">AUTO-EXEC</text>
+        </g>
+
+        <g>
+          <rect x="824" y="220" width="180" height="220" rx="10" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)"/>
+          <text x="840" y="250" font-family="JetBrains Mono, monospace" font-size="10" fill="rgba(255,255,255,.5)" letter-spacing="2">SIGNATURE</text>
+          <path d="M 850 360 Q 870 320 900 360 T 970 360" stroke="#d4a017" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M 850 390 Q 880 380 920 390 T 980 390" stroke="rgba(255,255,255,.7)" stroke-width="1" fill="none" stroke-linecap="round"/>
+          <text x="850" y="420" font-family="Fraunces, serif" font-style="italic" font-size="14" fill="#fff">— Counter-signed</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal"><span class="eyebrow">02 · Project Overview</span></div>
+      <div class="reveal" data-delay="1">
+        <p class="lead-p">
+          A full-lifecycle <em>Contract Lifecycle Management</em> platform — managing creation, approvals, e-signatures, execution, and reporting across enterprise contract operations.
+        </p>
+        <p class="body-p" style="margin-top: 32px;">
+          Contract operations were spread across mailboxes, shared drives, and a brittle import tool that worked when nobody was watching it. The customer needed one platform that could absorb their existing volume, automate the routine, and surface the exceptions to the right humans — with the reporting their executives kept asking for.
+        </p>
+        <p class="body-p">
+          As lead Business Analyst, I drove discovery, designed the lifecycle workflows end-to-end, specified the import validation engine, and partnered with engineering on the Power BI reporting layer that turned operational data into executive answers.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section" style="background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow brown">03 · Business Problem</span>
+      <h2>Contracts were <em>everywhere</em> and nowhere.</h2>
+      <p>The legal and procurement teams managed thousands of agreements, but couldn't answer a single executive question without a manual sweep.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-item reveal"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Fragmented contract systems with no single source of truth.</p></div>
+      <div class="problem-item reveal" data-delay="1"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Manual approvals — emails, screenshots, and missed sign-offs.</p></div>
+      <div class="problem-item reveal" data-delay="2"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Delayed execution cycles, especially around quarter-end pressure.</p></div>
+      <div class="problem-item reveal" data-delay="3"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Limited reporting visibility — KPIs hand-built in spreadsheets.</p></div>
+      <div class="problem-item reveal" data-delay="2"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>Inconsistent import validation, allowing dirty data to enter the system.</p></div>
+      <div class="problem-item reveal" data-delay="3"><div class="x"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><p>High manual tracking effort across renewals, expirations and obligations.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROLE -->
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal"><span class="eyebrow">04 · My Role</span></div>
+      <div class="reveal" data-delay="1">
+        <div class="role-card">
+          <div class="role-title">Lead Business Analyst</div>
+          <div class="role-sub">Lifecycle · Reporting · UAT · Backlog</div>
+          <ul>
+            <li>End-to-end requirement gathering</li>
+            <li>Workflow analysis &amp; lifecycle modeling</li>
+            <li>Stakeholder workshops &amp; alignment</li>
+            <li>Sprint backlog management in Azure DevOps</li>
+            <li>UAT coordination &amp; release validation</li>
+            <li>Reporting analysis &amp; KPI definition</li>
+            <li>Import validation rule design</li>
+            <li>Power BI dashboard specification</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY CONTRIBUTIONS -->
+<section class="section" style="border-top: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">05 · Key Contributions</span>
+      <h2>Where I <em>moved</em> the needle.</h2>
+      <p>The work spanned discovery to release — but the highest-leverage moments were the ones that shaped how data flowed end-to-end.</p>
+    </div>
+    <div class="contrib-grid">
+      <div class="contrib reveal"><div class="n">i.</div><h4>Defined contract lifecycle workflows</h4><p>Modeled creation → review → approve → sign → execute → renew, with branching for amendments and renewals.</p></div>
+      <div class="contrib reveal" data-delay="1"><div class="n">ii.</div><h4>Designed Power BI dashboards</h4><p>Specified executive KPI dashboards: cycle time, at-risk contracts, signature SLA, renewal pipeline.</p></div>
+      <div class="contrib reveal" data-delay="2"><div class="n">iii.</div><h4>Coordinated validation sprints</h4><p>Ran focused validation sprints with legal, procurement &amp; finance — closed sign-offs before each release.</p></div>
+      <div class="contrib reveal"><div class="n">iv.</div><h4>Resolved 60+ data consistency issues</h4><p>Triaged and specified fixes for legacy data anomalies discovered during import — eliminated duplicates, broken references, mis-typed clauses.</p></div>
+      <div class="contrib reveal" data-delay="1"><div class="n">v.</div><h4>Supported Agile delivery planning</h4><p>Maintained the priority stack across 6 sprints with clear capacity planning and stakeholder visibility.</p></div>
+      <div class="contrib reveal" data-delay="2"><div class="n">vi.</div><h4>Owned UAT for major releases</h4><p>Authored test scripts, coordinated business users, tracked defects and signed off readiness for go-live.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="section" style="background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow gold">06 · Solution Delivered</span>
+      <h2>Six capabilities. <em>One contract estate.</em></h2>
+    </div>
+    <div class="solution-list reveal">
+      <div class="solution-row"><span class="num">i — 01</span><span class="label">Contract creation workflows</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      <div class="solution-row"><span class="num">ii — 02</span><span class="label">Multi-level approvals</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      <div class="solution-row"><span class="num">iii — 03</span><span class="label">E-signature integration</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      <div class="solution-row"><span class="num">iv — 04</span><span class="label">KPI dashboards (Power BI)</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      <div class="solution-row"><span class="num">v — 05</span><span class="label">Import validation engine</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      <div class="solution-row"><span class="num">vi — 06</span><span class="label">Centralized contract repository</span><span class="arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">07 · Business Impact</span>
+      <h2>Time, <em>visibility</em>, and trust.</h2>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi gold reveal"><div class="kpi-num" data-count="60" data-suffix="%"><em>0</em></div><div class="kpi-lab">Manual reporting reduced</div></div>
+      <div class="kpi reveal" data-delay="1"><div class="kpi-num" data-count="3" data-suffix="+"><em>0</em></div><div class="kpi-lab">Hours/week saved (reporting)</div></div>
+      <div class="kpi brown reveal" data-delay="2"><div class="kpi-num" data-count="60" data-suffix="+"><em>0</em></div><div class="kpi-lab">Data consistency issues resolved</div></div>
+      <div class="kpi dark reveal" data-delay="3"><div class="kpi-num" data-count="500" data-suffix="+"><em>0</em></div><div class="kpi-lab">Monthly contracts supported</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LIFECYCLE TIMELINE -->
+<section class="section" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">08 · Contract Lifecycle</span>
+      <h2>From request to <em>renewal</em>.</h2>
+    </div>
+    <div class="wf-frame reveal">
+      <svg viewBox="0 0 1100 280" preserveAspectRatio="xMidYMid meet" style="width:100%; height:auto" aria-hidden="true">
+        <line x1="60" y1="140" x2="1040" y2="140" stroke="#e5e7eb" stroke-width="2"/>
+
+        <!-- Stage dots -->
+        <g font-family="Inter, sans-serif" font-size="13" fill="#1f1f1f">
+          <g>
+            <circle cx="100" cy="140" r="14" fill="#1f1f1f"/>
+            <text x="100" y="145" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#fff">i</text>
+            <text x="100" y="100" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5f6368" letter-spacing="2">REQUEST</text>
+            <text x="100" y="180" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="18">Initiate</text>
+            <text x="100" y="200" text-anchor="middle" font-size="11" fill="#5f6368">templates &amp; data</text>
+          </g>
+          <g>
+            <circle cx="260" cy="140" r="14" fill="#1f1f1f"/>
+            <text x="260" y="145" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#fff">ii</text>
+            <text x="260" y="100" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5f6368" letter-spacing="2">REVIEW</text>
+            <text x="260" y="180" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="18">Negotiate</text>
+            <text x="260" y="200" text-anchor="middle" font-size="11" fill="#5f6368">redlines &amp; clauses</text>
+          </g>
+          <g>
+            <circle cx="420" cy="140" r="14" fill="#1f1f1f"/>
+            <text x="420" y="145" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#fff">iii</text>
+            <text x="420" y="100" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5f6368" letter-spacing="2">APPROVE</text>
+            <text x="420" y="180" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="18">Sign-off</text>
+            <text x="420" y="200" text-anchor="middle" font-size="11" fill="#5f6368">multi-level</text>
+          </g>
+          <g>
+            <circle cx="580" cy="140" r="18" fill="#d4a017"/>
+            <text x="580" y="146" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="14" fill="#1f1f1f">iv</text>
+            <text x="580" y="100" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#a87d10" letter-spacing="2">E-SIGN</text>
+            <text x="580" y="184" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="18">Execute</text>
+            <text x="580" y="204" text-anchor="middle" font-size="11" fill="#5f6368">DocuSign · Adobe Sign</text>
+          </g>
+          <g>
+            <circle cx="740" cy="140" r="14" fill="#1f1f1f"/>
+            <text x="740" y="145" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#fff">v</text>
+            <text x="740" y="100" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5f6368" letter-spacing="2">MANAGE</text>
+            <text x="740" y="180" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="18">Track</text>
+            <text x="740" y="200" text-anchor="middle" font-size="11" fill="#5f6368">obligations &amp; KPIs</text>
+          </g>
+          <g>
+            <circle cx="900" cy="140" r="14" fill="#1f1f1f"/>
+            <text x="900" y="145" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#fff">vi</text>
+            <text x="900" y="100" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5f6368" letter-spacing="2">RENEW</text>
+            <text x="900" y="180" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="18">Amend</text>
+            <text x="900" y="200" text-anchor="middle" font-size="11" fill="#5f6368">or expire</text>
+          </g>
+          <g>
+            <circle cx="1020" cy="140" r="14" fill="#b76e4d"/>
+            <text x="1020" y="100" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#8a4f33" letter-spacing="2">REPORT</text>
+            <text x="1020" y="180" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="18" fill="#1f1f1f">KPIs</text>
+            <text x="1020" y="200" text-anchor="middle" font-size="11" fill="#5f6368">Power BI</text>
+          </g>
+        </g>
+
+        <!-- Loop back -->
+        <path d="M 900 165 Q 580 240 260 165" stroke="#b76e4d" stroke-width="1.2" stroke-dasharray="4 4" fill="none"/>
+        <text x="580" y="260" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#b76e4d" letter-spacing="3">RENEWAL FEEDBACK · CONTINUOUS</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS & SKILLS -->
+<section class="section" style="background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="reveal" style="margin-bottom: 32px;">
+          <span class="eyebrow">09 · Tools &amp; Tech</span>
+          <h2 style="margin-top:14px; font-size: 28px; font-weight:400;">The <em>stack</em>.</h2>
+        </div>
+        <div class="chip-grid reveal" data-delay="1">
+          <span class="chip"><span class="dot"></span>Power BI</span>
+          <span class="chip"><span class="dot"></span>SQL</span>
+          <span class="chip"><span class="dot"></span>Azure DevOps</span>
+          <span class="chip"><span class="dot"></span>DocuSign</span>
+          <span class="chip"><span class="dot"></span>Adobe Sign</span>
+          <span class="chip"><span class="dot"></span>Agile Scrum</span>
+        </div>
+      </div>
+      <div>
+        <div class="reveal" style="margin-bottom: 32px;">
+          <span class="eyebrow gold">10 · Skills Demonstrated</span>
+          <h2 style="margin-top:14px; font-size: 28px; font-weight:400;">The <em>practice</em>.</h2>
+        </div>
+        <div class="chip-grid reveal" data-delay="1">
+          <span class="chip gold-dot"><span class="dot"></span>CLM Lifecycle Design</span>
+          <span class="chip gold-dot"><span class="dot"></span>Reporting &amp; KPI</span>
+          <span class="chip gold-dot"><span class="dot"></span>Data Validation</span>
+          <span class="chip gold-dot"><span class="dot"></span>UAT Coordination</span>
+          <span class="chip gold-dot"><span class="dot"></span>Stakeholder Mgmt</span>
+          <span class="chip gold-dot"><span class="dot"></span>Backlog Management</span>
+          <span class="chip gold-dot"><span class="dot"></span>E-Signature Integration</span>
+          <span class="chip gold-dot"><span class="dot"></span>Documentation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGES -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow brown">11 · Challenges &amp; Resolutions</span>
+      <h2>Three knots. Three <em>untanglings</em>.</h2>
+    </div>
+
+    <div class="challenge-pair reveal">
+      <div class="challenge">
+        <span class="step problem">Challenge 01</span>
+        <h4>Legacy contract data was wildly inconsistent.</h4>
+        <p>The import tool kept failing on records that "looked fine" — bad dates, mismatched parties, orphan amendments.</p>
+      </div>
+      <div class="challenge">
+        <span class="step fix">Resolution</span>
+        <h4>Specified a tiered validation engine.</h4>
+        <p>Hard rules blocked imports; soft rules flagged for review. 60+ recurring data issues classified, owned and resolved.</p>
+      </div>
+    </div>
+
+    <div class="challenge-pair reveal" data-delay="1">
+      <div class="challenge">
+        <span class="step problem">Challenge 02</span>
+        <h4>Reporting kept lagging behind business questions.</h4>
+        <p>Each new executive question required a one-off SQL pull and a manual Excel rebuild.</p>
+      </div>
+      <div class="challenge">
+        <span class="step fix">Resolution</span>
+        <h4>Power BI semantic layer + curated KPIs.</h4>
+        <p>Defined a stable KPI dictionary backed by a Power BI dataset. Reporting time dropped from days to live.</p>
+      </div>
+    </div>
+
+    <div class="challenge-pair reveal" data-delay="2">
+      <div class="challenge">
+        <span class="step problem">Challenge 03</span>
+        <h4>Approvers gamed the workflow.</h4>
+        <p>Reviewers were rubber-stamping at quarter-end to clear the queue, hiding meaningful exceptions.</p>
+      </div>
+      <div class="challenge">
+        <span class="step fix">Resolution</span>
+        <h4>Risk-tiered routing + audit trail.</h4>
+        <p>Higher-risk contracts now require explicit, attributable sign-off with comments — surfaced on the dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOME -->
+<section class="section">
+  <div class="wrap">
+    <div class="outcome reveal">
+      <span class="eyebrow">12 · Final Outcome</span>
+      <h2>
+        eContracts &amp; Import Tool turned a <em>scattered estate</em> of agreements into a single, auditable, executive-visible operation — handling 500+ contracts a month with reporting that finally answered the right questions.
+      </h2>
+      <p>
+        The numbers — 60% manual reporting reduction, 3+ hours/week saved, 60+ data issues resolved — only tell part of the story. The deeper shift was cultural: contract operations stopped being a black box and started being a managed function.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="case-nav">
+  <a href="case-study-kozmo-ai-intake.html" class="case-nav-item prev">
+    <span class="lab"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M7 3L3 7l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Previous · 02</span>
+    <span class="ttl">Kozmo AI &amp; <em>Intake Agent</em></span>
+    <span class="arr"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M7 3L3 7l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</span>
+  </a>
+  <a href="index.html#work" class="case-nav-item next">
+    <span class="lab">Return to portfolio</span>
+    <span class="ttl">All <em>case studies</em></span>
+    <span class="arr">View all<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+</div>
+
+<footer class="foot">
+  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+    <span>© 2026 Ankit Singh · Bengaluru, India</span>
+    <span>Case Study 03 of 03</span>
+  </div>
+</footer>
+
+</main>
+
+<button id="to-top" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m18 15-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script type="module" src="case-studies.js"></script>
+</body>
+</html>
